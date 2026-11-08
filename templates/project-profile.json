@@ -1,0 +1,125 @@
+{
+  "_template": "THE YOUNGSTER — Project Profile Template v1.0",
+  "_instructions": "Create one file per project. Name it proj_[code].json. Replace all [PLACEHOLDER] values.",
+
+  "id": "proj_[unique_id]",
+  "code": "[SHORT_CODE — 3-6 chars, uppercase]",
+  "name": "[Full project name]",
+  "description": "[What this project is about and what it delivers]",
+  "objective": "[The specific, measurable goal]",
+  "vision": "[The larger purpose or intended impact]",
+
+  "phase": "[planning | development | testing | review | launch | post_launch]",
+  "status": "[not_started | planning | active | in_progress | blocked | on_hold | review | completed | cancelled | archived]",
+  "priority": "[critical | high | medium | low]",
+  "health": "[green | yellow | red]",
+  "health_reason": "[Why this health status — especially if yellow or red]",
+
+  "started_at": "[YYYY-MM-DD]",
+  "target_completion": "[YYYY-MM-DD]",
+  "actual_completion": null,
+  "last_updated": "[ISO8601 timestamp]",
+
+  "stakeholders": [
+    {
+      "name": "[Person name]",
+      "role": "[Their role in this project]",
+      "responsibilities": ["[Responsibility 1]", "[Responsibility 2]"]
+    }
+  ],
+
+  "deliverables": [
+    {
+      "id": "del_[id]",
+      "name": "[Deliverable name]",
+      "description": "[What this deliverable is]",
+      "status": "[not_started | in_progress | in_review | completed]",
+      "due_date": "[YYYY-MM-DD]",
+      "owner": "[responsible person]",
+      "completed_at": null,
+      "evidence": null
+    }
+  ],
+
+  "milestones": [
+    {
+      "id": "mil_[id]",
+      "name": "[Milestone name]",
+      "description": "[What achieving this milestone means]",
+      "target_date": "[YYYY-MM-DD]",
+      "status": "[not_started | in_progress | completed | missed]",
+      "completed_at": null,
+      "evidence": null
+    }
+  ],
+
+  "active_tasks": ["task_[id]"],
+  "completed_tasks": ["task_[id]"],
+
+  "decisions": [
+    {
+      "id": "dec_[id]",
+      "decision": "[What was decided]",
+      "rationale": "[Why this decision was made]",
+      "alternatives_considered": ["[Alternative 1]"],
+      "made_by": "[Who decided]",
+      "made_at": "[ISO8601 timestamp]",
+      "supersedes": null,
+      "source": "[conversation | document]"
+    }
+  ],
+
+  "blockers": [
+    {
+      "id": "block_[id]",
+      "description": "[What is blocking progress]",
+      "blocking_tasks": ["task_[id]"],
+      "owner": "[Who can resolve this]",
+      "reported_at": "[ISO8601 timestamp]",
+      "resolved_at": null,
+      "resolution": null
+    }
+  ],
+
+  "risks": [
+    {
+      "id": "risk_[id]",
+      "description": "[Risk description]",
+      "likelihood": "[high | medium | low]",
+      "impact": "[high | medium | low]",
+      "mitigation": "[How to reduce this risk]",
+      "status": "[open | mitigated | closed]"
+    }
+  ],
+
+  "dependencies": [
+    {
+      "depends_on": "[proj_[id] or task_[id]]",
+      "dependency_type": "[blocking | soft]",
+      "description": "[Why this dependency exists]",
+      "status": "[pending | completed | removed]"
+    }
+  ],
+
+  "snapshots": [
+    {
+      "created_at": "[ISO8601 timestamp]",
+      "phase": "[phase at time of snapshot]",
+      "status": "[status at time of snapshot]",
+      "summary": "[Compact state description — what was done, what's next, key decisions]"
+    }
+  ],
+
+  "history": [
+    {
+      "timestamp": "[ISO8601 timestamp]",
+      "event": "[What happened]",
+      "details": "[Additional context]",
+      "source": "[conversation | document | system]"
+    }
+  ],
+
+  "tags": [],
+  "notes": [],
+  "links": []
+}

@@ -1,0 +1,71 @@
+{
+  "_template": "THE YOUNGSTER — Task Record Template v1.0",
+  "_instructions": "Create one record per distinct task. Use subtask support for complex tasks.",
+
+  "id": "task_[unique_id]",
+  "title": "[Action-oriented task name: VERB + OBJECT]",
+  "description": "[Full context: what needs to be done, why, what done looks like]",
+  "acceptance_criteria": "[Specific, verifiable criteria that define 'done']",
+
+  "project_id": "[proj_[id] or null]",
+  "parent_task_id": "[task_[id] or null — for subtasks only]",
+  "subtasks": [],
+
+  "owner": "[Person responsible for completing this]",
+  "created_by": "[Who created this task]",
+  "reviewers": [],
+  "observers": [],
+
+  "priority": "[critical | high | medium | low]",
+  "status": "[backlog | ready | in_progress | waiting | blocked | in_review | completed | cancelled | deferred]",
+  "effort": "[small | medium | large | xl]",
+  "complexity": "[trivial | simple | moderate | complex | very_complex]",
+
+  "created_at": "[ISO8601 timestamp]",
+  "updated_at": "[ISO8601 timestamp]",
+  "started_at": null,
+  "due_date": null,
+  "due_date_confidence": "[confirmed | proposed | intention]",
+  "completed_at": null,
+  "deferred_to": null,
+
+  "dependencies": [
+    {
+      "task_id": "task_[id]",
+      "type": "[blocking | soft]",
+      "status": "[pending | completed]"
+    }
+  ],
+
+  "blockers": [
+    {
+      "blocker_id": "block_[id]",
+      "description": "[What is blocking this task]",
+      "blocker_owner": "[Who can resolve this]",
+      "reported_at": "[ISO8601 timestamp]",
+      "resolved_at": null
+    }
+  ],
+
+  "next_action": "[The specific next thing that needs to happen to move this forward]",
+  "waiting_on": "[What external input is needed — if status is 'waiting']",
+
+  "source": "[conversation | document | external_system | user_request]",
+  "source_reference": "[Quote or link that created this task]",
+  "completion_evidence": "[How completion was confirmed — quote or reference]",
+
+  "history": [
+    {
+      "timestamp": "[ISO8601 timestamp]",
+      "event": "[created | status_changed | deadline_changed | reassigned | blocked | unblocked | completed]",
+      "field_changed": "[field name]",
+      "old_value": null,
+      "new_value": "[new value]",
+      "changed_by": "[user | system]",
+      "source": "[what triggered this change]"
+    }
+  ],
+
+  "tags": [],
+  "notes": []
+}

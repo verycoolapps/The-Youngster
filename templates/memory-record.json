@@ -1,0 +1,52 @@
+{
+  "_template": "THE YOUNGSTER — Memory Record Template v1.0",
+  "_instructions": "Copy this template for each new memory record. Replace all [PLACEHOLDER] values. Remove _template and _instructions fields before saving.",
+
+  "id": "rec_[type]_[unique_id]",
+  "type": "[task | project | decision | event | commitment | blocker | milestone]",
+  "title": "[Brief, descriptive title — action-oriented for tasks]",
+  "description": "[Full context: what, why, who, when]",
+
+  "project_id": "[proj_[id] or null if standalone]",
+  "parent_id": "[rec_[id] or null if top-level]",
+
+  "status": "[active | completed | cancelled | deferred | blocked | archived]",
+  "priority": "[critical | high | medium | low]",
+  "confidence": "[verified | probable | assumed | uncertain]",
+
+  "created_at": "[ISO8601 timestamp]",
+  "updated_at": "[ISO8601 timestamp]",
+  "started_at": null,
+  "completed_at": null,
+  "due_date": null,
+  "deferred_to": null,
+
+  "owner": "[Person or team responsible for this record]",
+  "created_by": "[Who created this record]",
+  "stakeholders": [],
+
+  "dependencies": [],
+  "blockers": [],
+  "related_records": [],
+
+  "source": "[conversation | document | external | system]",
+  "source_reference": "[Quote, link, or reference to original source]",
+  "evidence": "[Proof supporting this record's current status]",
+
+  "next_action": "[The specific, concrete next step required]",
+
+  "history": [
+    {
+      "timestamp": "[ISO8601 timestamp]",
+      "event": "[What changed]",
+      "field_changed": "[field name or 'created']",
+      "old_value": null,
+      "new_value": "[New value]",
+      "changed_by": "[user | system]",
+      "source": "[What triggered this change]"
+    }
+  ],
+
+  "tags": [],
+  "notes": []
+}

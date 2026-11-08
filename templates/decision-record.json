@@ -1,0 +1,55 @@
+{
+  "_template": "THE YOUNGSTER — Decision Record Template v1.0",
+  "_instructions": "Every important decision gets its own record. Decisions are immutable history — never delete or rewrite.",
+
+  "id": "dec_[unique_id]",
+  "title": "[Brief title: WHAT was decided]",
+  "category": "[technical | product | operational | strategic | financial | team | timeline | vendor]",
+
+  "decision": "[The actual decision made — precise and unambiguous]",
+  "rationale": "[Why this decision was made — the reasoning]",
+  "context": "[The situation that required a decision to be made]",
+  "alternatives_considered": [
+    {
+      "option": "[Alternative option]",
+      "why_rejected": "[Why this option was not chosen]"
+    }
+  ],
+  "trade_offs_accepted": "[What was knowingly given up by making this decision]",
+  "assumptions": ["[Assumption 1 this decision rests on]"],
+
+  "project_id": "[proj_[id] or null]",
+  "affected_tasks": ["task_[id]"],
+  "affected_deliverables": ["del_[id]"],
+
+  "made_by": "[Who made this decision]",
+  "made_with": ["[Others who were part of this decision]"],
+  "made_at": "[ISO8601 timestamp]",
+  "source": "[conversation | document | meeting | external]",
+  "source_reference": "[Quote or link to original decision context]",
+
+  "confidence": "[verified | probable | assumed]",
+  "finality": "[final | provisional | reversible_if | subject_to_review]",
+  "review_trigger": "[What would cause this decision to be revisited]",
+
+  "supersedes": null,
+  "superseded_by": null,
+  "related_decisions": ["dec_[id]"],
+
+  "status": "[active | superseded | reversed | archived]",
+  "reversal_reason": null,
+  "reversal_at": null,
+
+  "impact": "[What changes as a result of this decision]",
+  "follow_up_required": ["[Action required as result of this decision]"],
+
+  "history": [
+    {
+      "timestamp": "[ISO8601 timestamp]",
+      "event": "[Decision created | Superseded | Reversed | Referenced]",
+      "details": "[Context]"
+    }
+  ],
+
+  "notes": []
+}
